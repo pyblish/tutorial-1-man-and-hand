@@ -38,9 +38,9 @@ def main():
     print "Setting PYTHONPATH = %s" % os.environ["PYTHONPATH"]
     print "Setting PYBLISHPLUGINPATH = %s" % os.environ["PYBLISHPLUGINPATH"]
 
-    subprocess.Popen([MAYAPATH])
-
-    return 0
+    print
+    print "Launching Maya.."
+    return subprocess.call([MAYAPATH])
 
 
 if __name__ == '__main__':
